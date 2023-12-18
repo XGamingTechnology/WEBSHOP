@@ -17,8 +17,8 @@
         echo "<tr> 
                 <th class='kolom-nomor'>No</th>
                 <th class='kiri'>Kategori</th>
-                <th>Status</th>
-                <th>Action</th>
+                <th clas='tengah'>Status</th>
+                <th class='tengah'>Action</th>
             </tr>";
 
     $no=1;
