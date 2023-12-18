@@ -156,3 +156,11 @@ div#user {
     padding: 10px;
     background: white;
 }
+
+.table-list {
+    width: 100%;
+    border-collapse: collapse;
+    /* border: cadetblue; */
+}
+
+tr {}
