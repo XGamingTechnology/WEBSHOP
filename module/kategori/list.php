@@ -15,8 +15,8 @@
         echo "<table class='table-list'>";
 
         echo "<tr> 
-                <th>No</th>
-                <th>Kategori</th>
+                <th class='kolom-nomor'>No</th>
+                <th class='kiri'>Kategori</th>
                 <th>Status</th>
                 <th>Action</th>
             </tr>";
