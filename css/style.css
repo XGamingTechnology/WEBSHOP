@@ -168,7 +168,21 @@ div#user {
     background: #e6e6e6;
 }
 
-.table-list tr.baris-title th,
-.table-list tr.baris-title td {
+.table-list tr.baris-title th.kolom-nomor {
     padding: 10px 7px;
+}
+
+.kolom-nomor {width: 20px;text-align: center;}
+
+.kiri {
+    text-align: left;
+}
+
+
+.tengah {
+    text-align: center;
+}
+
+.kanan {
+    text-align: right;
 }
