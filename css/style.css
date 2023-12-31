@@ -168,7 +168,8 @@ div#user {
     background: #e6e6e6;
 }
 
-.table-list tr.baris-title th.kolom-nomor {
+.table-list tr th,
+.table-list tr td {
     padding: 10px 7px;
 }
 
@@ -194,11 +195,13 @@ div#user {
 
 .tombol-action {
     background: #135474;
+    padding: 7px 15px;
     color: white;
     border-radius: 3px;
     cursor: pointer;
     text-decoration: none;
     margin-right: 3px;
+    font-size: 9px;
 }
 
 .tombol-action:hover {
