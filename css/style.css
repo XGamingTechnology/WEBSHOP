@@ -168,6 +168,7 @@ div#user {
     background: #e6e6e6;
 }
 
-.table-list tr.baris-title th.kolom-nomor {
+.table-list tr.baris-title th,
+.table-list tr.baris-title td {
     padding: 10px 7px;
 }
