@@ -186,3 +186,21 @@ div#user {
 .kanan {
     text-align: right;
 }
+
+#frame-tambah {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.tombol-action {
+    background: #135474;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+.tombol-action:hover {
+    background:orange;
+}
