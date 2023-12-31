@@ -163,4 +163,11 @@ div#user {
     /* border: cadetblue; */
 }
 
-tr {}
+
+.table-list tr.baris-title {
+    background: #e6e6e6;
+}
+
+.table-list tr.baris-title th.kolom-nomor {
+    padding: 10px 7px;
+}

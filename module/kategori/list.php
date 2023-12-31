@@ -14,7 +14,7 @@
 
         echo "<table class='table-list'>";
 
-        echo "<tr> 
+        echo "<tr class='baris-title'> 
                 <th class='kolom-nomor'>No</th>
                 <th class='kiri'>Kategori</th>
                 <th clas='tengah'>Status</th>
