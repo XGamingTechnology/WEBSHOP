@@ -24,9 +24,12 @@
         <span>
 
             <select name="kategori_id">
-                <option value="A">Ayam</option>
-                <option value="A">Ayam</option>
-                <option value="A">Ayam</option>
+                <?php 
+                    $query = mysqli_query($koneksi, "SELECT * FROM kategori WHERE status='on'");
+                    while($row=mysqli_fetch_assoc($query)){
+                        echo "<option value='$row[kategori_id]'>$row[kategori]</option>";
+                    }
+                ?>
         </span>
     </div>
 
