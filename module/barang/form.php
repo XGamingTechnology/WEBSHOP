@@ -1,27 +1,33 @@
 <?php 
 
-    $kategori_id = isset($_GET['kategori_id']) ? $_GET['kategori_id'] : false;
+    $barang_id = isset($_GET['barang_id']) ? $_GET['kategori_id'] : false;
 
-    $kategori = "";
+    // $kategori = "";
     $status = "";
     $button = "Add";
 
-    if($kategori_id){
-        $queryKategori = mysqli_query($koneksi, "SELECT * FROM kategori WHERE kategori_id='$kategori_id'");
-        $row =mysqli_fetch_assoc($queryKategori);
+    // if($kategori_id){
+    //     $queryKategori = mysqli_query($koneksi, "SELECT * FROM kategori WHERE kategori_id='$kategori_id'");
+    //     $row =mysqli_fetch_assoc($queryKategori);
 
-        $kategori =$row['kategori'];
-        $status =$row['status'];
-        $button = "Update";
+    //     $kategori =$row['kategori'];
+    //     $status =$row['status'];
+    //     $button = "Update";
 
-    }
+    // }
 ?>
 
-<form action="<?php echo BASE_URL."module/kategori/action.php?kategori_id=$kategori_id";?>" method="POST">
+<form action="<?php echo BASE_URL."module/kategori/action.php?barang_id=$kategori_id";?>" method="POST">
 
     <div class="element-form">
         <label>Kategori</label>
-        <span><input type="text" name="kategori" value="<?php echo $kategori; ?>" /></span>
+        <span>
+
+            <select name="kategori_id">
+                <option value="A">Ayam</option>
+                <option value="A">Ayam</option>
+                <option value="A">Ayam</option>
+        </span>
     </div>
 
     <div class="element-form">
