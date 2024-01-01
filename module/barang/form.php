@@ -25,7 +25,7 @@
 
             <select name="kategori_id">
                 <?php 
-                    $query = mysqli_query($koneksi, "SELECT * FROM kategori WHERE status='on'");
+                    $query = mysqli_query($koneksi, "SELECT kategori_id, kategori FROM kategori WHERE status='on' ORDER BY kategori ASC");
                     while($row=mysqli_fetch_assoc($query)){
                         echo "<option value='$row[kategori_id]'>$row[kategori]</option>";
                     }
