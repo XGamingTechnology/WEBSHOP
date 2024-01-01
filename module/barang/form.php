@@ -2,7 +2,10 @@
 
     $barang_id = isset($_GET['barang_id']) ? $_GET['kategori_id'] : false;
 
-    // $kategori = "";
+    $nama_barang = "";
+    $spesifikasi = "";
+    $stok = "";
+    $harga = "";
     $status = "";
     $button = "Add";
 
