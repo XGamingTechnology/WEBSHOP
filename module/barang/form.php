@@ -34,6 +34,33 @@
     </div>
 
     <div class="element-form">
+        <label>Nama Barang</label>
+        <span><input type="text" name="nama_barang" value="<?php echo $nama_barang; ?>" /></span>
+    </div>
+
+    <div class="element-form">
+        <label>Spesifikasi</label>
+        <span>
+            <texarea name="spesifikasi"><?php echo $spesifikasi; ?></textarea>
+        </span>
+    </div>
+
+    <div class="element-form">
+        <label>stok</label>
+        <span><input type="text" name="stok" value="<?php echo $stok; ?>" /></span>
+    </div>
+
+    <div class="element-form">
+        <label>Harga</label>
+        <span><input type="text" name="harga" value="<?php echo $harga; ?>" /></span>
+    </div>
+
+    <div class="element-form">
+        <label>Gambar Produk</label>
+        <span><input type="file" name="file" /></span>
+    </div>
+
+    <div class="element-form">
         <label>Status</label>
         <span>
             <input type="radio" name="status" value="on" <?php if($status == "on") {echo "checked='true'";} ?> /> On
