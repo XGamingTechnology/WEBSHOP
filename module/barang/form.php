@@ -20,7 +20,8 @@
     // }
 ?>
 
-<form action="<?php echo BASE_URL."module/kategori/action.php?barang_id=$kategori_id";?>" method="POST">
+<form action="<?php echo BASE_URL."module/kategori/action.php?barang_id=$kategori_id";?>" method="POST"
+    enctype="multipart/form-data">
 
     <div class="element-form">
         <label>Kategori</label>
@@ -33,6 +34,7 @@
                         echo "<option value='$row[kategori_id]'>$row[kategori]</option>";
                     }
                 ?>
+            </select>
         </span>
     </div>
 
@@ -44,12 +46,12 @@
     <div class="element-form">
         <label>Spesifikasi</label>
         <span>
-            <texarea name="spesifikasi"><?php echo $spesifikasi; ?></textarea>
+            <textarea name="spesifikasi"><?php echo $spesifikasi; ?></textarea>
         </span>
     </div>
 
     <div class="element-form">
-        <label>stok</label>
+        <label>Stok</label>
         <span><input type="text" name="stok" value="<?php echo $stok; ?>" /></span>
     </div>
 
