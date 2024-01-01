@@ -9,7 +9,7 @@
     $query = mysqli_query($koneksi, "SELECT * FROM barang");
         
     if(mysqli_num_rows($query) == 0){
-        echo "<h3>Saat ini belum ada nama kategori di dalam table barang</h3>";
+        echo "<h3>Saat ini belum ada kategori di dalam table barang</h3>";
     }else{
 
         echo "<table class='table-list'>";
