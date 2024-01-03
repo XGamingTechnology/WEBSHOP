@@ -27,11 +27,11 @@
             
         echo "<tr>
                 <td class='kolom-nomor'>$no</td>
-                <td class='kiri'>$row[barang]</td>
+                <td class='kiri'>$row[nama_barang]</td>
                 <td class='kiri'>$row[harga]</td>
                 <td class='tengah'>$row[status]</td>
                 <td class='tengah'>
-                    <a class='tombol-action' href='".BASE_URL."index.php?page=my_profile&module=kategori&action=form&barang_id=$row[barang_id]'>Edit</a>
+                    <a class='tombol-action' href='".BASE_URL."index.php?page=my_profile&module=barang&action=form&barang_id=$row[barang_id]'>Edit</a>
                 </td>
                 </tr>";
         $no++;

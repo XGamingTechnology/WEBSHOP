@@ -1,6 +1,6 @@
 <?php 
 
-    $barang_id = isset($_GET['barang_id']) ? $_GET['kategori_id'] : false;
+    $barang_id = isset($_GET['barang_id']) ? $_GET['barang_id'] : false;
 
     $nama_barang = "";
     $spesifikasi = "";
@@ -9,18 +9,9 @@
     $status = "";
     $button = "Add";
 
-    // if($kategori_id){
-    //     $queryKategori = mysqli_query($koneksi, "SELECT * FROM kategori WHERE kategori_id='$kategori_id'");
-    //     $row =mysqli_fetch_assoc($queryKategori);
-
-    //     $kategori =$row['kategori'];
-    //     $status =$row['status'];
-    //     $button = "Update";
-
-    // }
 ?>
 
-<form action="<?php echo BASE_URL."module/kategori/action.php?barang_id=$kategori_id";?>" method="POST"
+<form action="<?php echo BASE_URL."module/barang/action.php?barang_id=$barang_id";?>" method="POST"
     enctype="multipart/form-data">
 
     <div class="element-form">
