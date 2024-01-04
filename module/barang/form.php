@@ -9,6 +9,7 @@
     $stok = "";
     $harga = "";
     $status = "";
+    $keterangan_gambar = "";
     $button = "Add";
 
     if ($barang_id) {
@@ -23,6 +24,10 @@
         $stok = $row['stok'];
         $status = $row['status'];
         $button = "update";
+
+        $keterangan_gambar = "(Klik choice file jika ingin menganti gambar disamping)";
+        $gambar = "<img src='".BASE_URL."images/barang/$gambar' style='width: 200px;vertical-align: middle;'/>";
+        
     }
 
 ?>
@@ -72,8 +77,10 @@
     </div>
 
     <div class="element-form">
-        <label>Gambar Produk</label>
-        <span><input type="file" name="file" /></span>
+        <label>Gambar Produk <?php echo $keterangan_gambar; ?></label>
+        <span>
+            <input type="file" name="file" /> <?php echo $gambar?>
+        </span>
     </div>
 
     <div class="element-form">
