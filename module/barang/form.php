@@ -3,11 +3,26 @@
     $barang_id = isset($_GET['barang_id']) ? $_GET['barang_id'] : false;
 
     $nama_barang = "";
+    $kategori_id = "";
     $spesifikasi = "";
+    $gambar = "";
     $stok = "";
     $harga = "";
     $status = "";
     $button = "Add";
+
+    if ($barang_id) {
+        $query = mysqli_query ($koneksi, "SELECT * FROM barang WHERE barang_id='$barang_id'");
+
+        $nama_barang = $row ['nama_barang'];
+        $kategori_id = $row ['kategori_id'];
+        $spesifikasi = $row ['spesifikasi'];
+        $gambar = $row ['gambar'];
+        $harga = $row ['harga'];
+        $stok = $row ['stok'];
+        $status = $row ['status'];
+        $button = "update";
+    }
 
 ?>
 
