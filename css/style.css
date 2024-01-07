@@ -1,209 +1,242 @@
-body{
-    font-family:arial;
-    font-size:12px;
-    color:#1e5474;
-    background: #f7f7f7;
-    margin: 0px;    
+body {
+  font-family: arial;
+  font-size: 12px;
+  color: #1e5474;
+  background: #f7f7f7;
+  margin: 0px;
 }
 
-body{
-    font-family:arial;
-    font-size:12px;
-    color:#1e5474;
-    background: #f7f7f7;
-    margin: 0px;    
+body {
+  font-family: arial;
+  font-size: 12px;
+  color: #1e5474;
+  background: #f7f7f7;
+  margin: 0px;
 }
 
 #container {
-    width: 1100px;
-    height: auto;
-    margin: 0px auto;
-    padding: 10px;
+  width: 1100px;
+  height: auto;
+  margin: 0px auto;
+  padding: 10px;
 }
 
 #container #header {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #container #header #menu {
-    background: #1e5474;
-    padding: 5px 10px;
-    overflow: hidden;
+  background: #1e5474;
+  padding: 5px 10px;
+  overflow: hidden;
 }
 
-#container #header #menu #user {float: left;}
+#container #header #menu #user {
+  float: left;
+}
 
 #container #header #menu #user a {
-    color: white;
-    padding-right: 5px;
-    margin-top: 5px;
-    display: inline-block;
-    text-decoration: none;
+  color: white;
+  padding-right: 5px;
+  margin-top: 5px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 #container #header #menu #button-kerajang {
-    float: right;
-    background: orange; 
-    padding: 2px 10px;
-    border-radius: 3px;
+  float: right;
+  background: orange;
+  padding: 2px 10px;
+  border-radius: 3px;
 }
 
 #container #header #menu #button-kerajang img {
-    vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 #container #footer {
-    background: #1e5475;
-    padding: 10px;
+  background: #1e5475;
+  padding: 10px;
 }
 
 #container #footer p {
-    color: white;
-    text-align: right;
-    font-size: 10px;
-    font-style: italic;
-    margin: 0px;
+  color: white;
+  text-align: right;
+  font-size: 10px;
+  font-style: italic;
+  margin: 0px;
 }
 
 #container #content {
-    padding: 10px 0px;
-    overflow: hidden;
+  padding: 10px 0px;
+  overflow: hidden;
 }
 
 #container-user-akses {
-    width: 350px;
-    height: auto;
-    margin: 50px auto;
+  width: 350px;
+  height: auto;
+  margin: 50px auto;
 }
 
-.element-form {margin-bottom: 15px;}
+.element-form {
+  margin-bottom: 15px;
+}
 
 .element-form label {
-    display: block;
-    font-weight: bold;
+  display: block;
+  font-weight: bold;
 }
 
 .element-form span {
-    display: block;
+  display: block;
 }
 
 .element-form input[type="text"],
 .element-form input[type="password"],
 .element-form textarea,
-.element-form select{
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box;
+.element-form select {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 .element-form span input[type="submit"] {
-    background: #1e5474;
-    border: none;
-    color: white;
-    padding: 7px 20px;
-    border-radius: 3px;
-    font-size: 9px;
-    cursor: pointer;
+  background: #1e5474;
+  border: none;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 3px;
+  font-size: 9px;
+  cursor: pointer;
 }
 
 .element-form span input[type="submit"]:hover {
-    background:orange   
+  background: orange;
 }
 
 .notif {
-    color: white;
-    margin-bottom: 10px;
-    background: blue;
-    padding: 10px;
-    font-size: 11px;
+  color: white;
+  margin-bottom: 10px;
+  background: blue;
+  padding: 10px;
+  font-size: 11px;
 }
 
 div#user {
-    color: white;
+  color: white;
 }
 
 #bg-page-profile {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #menu-profile {
-    float: left;
-    width: 245px;
-    background: #1e5474;
+  float: left;
+  width: 245px;
+  background: #1e5474;
 }
 
 #menu-profile ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 #menu-profile ul li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
 #menu-profile ul li a:hover,
 #menu-profile ul li a.active {
-    background:orange    
+  background: orange;
 }
 
 #profile-content {
-    float: left;
-    width: 835px;
-    padding: 10px;
-    background: white;
+  float: left;
+  width: 835px;
+  padding: 10px;
+  background: white;
 }
 
 .table-list {
-    width: 100%;
-    border-collapse: collapse;
-    /* border: cadetblue; */
+  width: 100%;
+  border-collapse: collapse;
+  /* border: cadetblue; */
 }
 
-
 .table-list tr.baris-title {
-    background: #e6e6e6;
+  background: #e6e6e6;
 }
 
 .table-list tr th,
 .table-list tr td {
-    padding: 10px 7px;
+  padding: 10px 7px;
 }
 
-.kolom-nomor {width: 20px;text-align: center;}
+.kolom-nomor {
+  width: 20px;
+  text-align: center;
+}
 
 .kiri {
-    text-align: left;
+  text-align: left;
 }
 
-
 .tengah {
-    text-align: center;
+  text-align: center;
 }
 
 .kanan {
-    text-align: right;
+  text-align: right;
 }
 
 #frame-tambah {
-    margin-bottom: 10px;
-    text-align: right;
+  margin-bottom: 10px;
+  text-align: right;
 }
 
 .tombol-action {
-    background: #135474;
-    padding: 7px 15px;
-    color: white;
-    border-radius: 3px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-right: 3px;
-    font-size: 9px;
+  background: #135474;
+  padding: 7px 15px;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 3px;
+  font-size: 9px;
 }
 
 .tombol-action:hover {
-    background:orange;
+  background: orange;
+}
+
+#kiri {
+  width: 245px;
+  height: auto;
+  float: left;
+}
+
+#menu-kategori ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu-kategori li {
+  margin-bottom: 5px;
+}
+
+#menu-kategori ul li a {
+  display: block;
+  padding: 10px;
+  background: white;
+  color: #1e5474;
+  text-decoration: none;
+}
+
+#menu-kategori ul li a:hover {
+  background: #e8e8e8;
 }
