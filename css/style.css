@@ -315,3 +315,8 @@ div#user {
 #kanan #frame-barang ul li .button-add-cart a:hover {
   background: orange;
 }
+
+#menu-kategori ul li a:hover,
+#menu-kategori ul li a.active {
+  background: #e8e8e8;
+}
