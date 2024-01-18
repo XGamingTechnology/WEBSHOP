@@ -64,7 +64,7 @@ $totalBarang = count($keranjang);
                     }
                     ?>
                 </div>
-                <a href="<?php echo BASE_URL."index.php?page=kerajang";?>" id="button-kerajang">
+                <a href="<?php echo BASE_URL."index.php?page=keranjang";?>" id="button-kerajang">
                     <img src="<?php echo BASE_URL."images/cart.png"; ?>" />
                     <?php 
                     if($totalBarang != 0) {
