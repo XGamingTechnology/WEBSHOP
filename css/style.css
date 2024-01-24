@@ -167,6 +167,10 @@ div#user {
   /* border: cadetblue; */
 }
 
+.table-list tr {
+  border-bottom: 1px solid #1e5474;
+}
+
 .table-list tr.baris-title {
   background: #e6e6e6;
 }

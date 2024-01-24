@@ -12,8 +12,11 @@ $kategori_id = isset($_GET['kategori_id']) ? $_GET['kategori_id'] : false;
 $user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : false;
 $nama = isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
 $level = isset($_SESSION['level']) ? $_SESSION['level'] : false;
-$keranjang = isset($_SESSION['keranjang']) ? $_SESSION['keranjang'] : false;
-$totalBarang = count($keranjang);
+$keranjang = isset($_SESSION['keranjang']) ? $_SESSION['keranjang'] : array(); // Make sure $keranjang is always an array
+$totalBarang = is_array($keranjang) ? count($keranjang) : 0; // Check if $keranjang is an array before using count()
+
+// ... rest of the code ...
+
 
 ?>
 <html lang="en">
