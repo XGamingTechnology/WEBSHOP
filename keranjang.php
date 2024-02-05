@@ -14,6 +14,7 @@ if($totalBarang == 0){
                 <th class='kanan'>Total</th>
             </tr>";
 
+    $subtotal = 0;        
     foreach($keranjang AS $key => $value){
         $barang_id = $key;
 
@@ -23,6 +24,7 @@ if($totalBarang == 0){
         $harga = $value["harga"];
 
         $total = $quantity * $harga;
+        $subtotal = $subtotal + $total;
 
         echo "<tr>
                 <td class='tengah'>$no</td>
@@ -36,8 +38,17 @@ if($totalBarang == 0){
         $no++;	
     }
     
+    echo "<tr>
+            <td colspan='5' class='kanan'><b>Sub Total</b></td>
+            <td class='kanan'><b>".rupiah($subtotal)."</b></td>
+        </tr>";
     // You can now use $subtotal wherever needed in your code.
     echo "</table>";
+
+    echo "<div id='frame-button-keranjang'>
+				<a id='lanjut-belanja' href='".BASE_URL."index.php'>< Lanjut Belanja</a>
+				<a id='lanjut-pemesanan' href='".BASE_URL."index.php?page=data_pemesan'>Lanjut Pemesanan ></a>
+			  </div>";
 }
 
 ?>
