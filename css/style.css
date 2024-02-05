@@ -379,3 +379,15 @@ div#user {
   font-weight: bold;
   vertical-align: top;
 }
+
+.kanan.hapus_item {
+  position: relative;
+}
+
+.kanan.hapus_item a {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-decoration: none;
+  color: #1e5474;
+}
