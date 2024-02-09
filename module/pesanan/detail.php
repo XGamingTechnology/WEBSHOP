@@ -109,6 +109,6 @@
         Nomor Account : 000-999-888 (A/N) Weshop) .<br />
         Setelah melakukan pembayaran silakan lakukan konfirmasi pembayaran
         <a
-            href="<?php echo BASE_URL."index.php?page=my_profile&module=pesanan&action=konfirmasi_pembayaran&pesanan_id=$pesanan_id'"?>">Disini</a>.
+            href="<?php echo BASE_URL."index.php?page=my_profile&module=pesanan&action=konfirmasi_pembayaran&pesanan_id=$pesanan_id"?>">Disini</a>.
     </p>
 </div>
