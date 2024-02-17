@@ -35,3 +35,34 @@
     return $string;
 
     }
+
+    function admin_only($module, $level) {
+        if($level != "superadmin") {
+            $admin_pages = array ("kategori", "barang", "kota", "user", "banner");
+            if(in_array($module, $admin_pages)) {
+                header("location: ".BASE_URL);
+            }
+        }
+    }
+
+    function pagination($query, $data_per_halaman, $pagination, $url, $module){
+        global $koneksi;
+        
+        $queryHitungKategori = mysqli_query($koneksi, $query);
+        $total_data =mysqli_num_rows($queryHitungKategori);
+        $total_halaman = Ceil($total_data / $data_per_halaman);
+    
+        echo "<ul class='pagination'>";
+        for($i = 1; $i<=$total_halaman; $i ++) {
+            if($pagination == $i){
+                echo "<li><a class='active' href='".BASE_URL."index.php?page=my_profile&module=kategori&action=list&pagination=$i'>$i</a></li>";
+            }else {
+                echo "<li><a href='".BASE_URL."index.php?page=my_profile&module=kategori&action=list&pagination=$i'>$i</a></li>";
+            }
+        }
+        echo "</ul>";
+       
+    }
+
+
+   

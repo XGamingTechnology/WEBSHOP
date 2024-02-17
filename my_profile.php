@@ -8,6 +8,8 @@
         header ("location: ".BASE_URL."index.php?page=login");
     }
 
+    admin_only($module, $level);
+   
 ?>
 
 <div id="bg-page-profile">

@@ -62,8 +62,8 @@ $totalBarang = is_array($keranjang) ? count($keranjang) : 0; // Check if $keranj
                               <a href='".BASE_URL."index.php?page=my_profile&module=pesanan&action=list'>My Profile</a>
                               <a href='".BASE_URL."logout.php'>logout</a>";
                     }else{
-                        echo "<a href='".BASE_URL."index.php?page=login'>Login</a>
-                             <a href='".BASE_URL."index.php?page=register'>Register</a>";
+                        echo "<a href='".BASE_URL."login/'>Login</a>
+                             <a href='".BASE_URL."register/'>Register</a>";
                     }
                     ?>
                 </div>
