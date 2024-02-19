@@ -198,8 +198,9 @@ div#user {
 }
 
 #frame-tambah {
+  overflow: hidden;
   margin-bottom: 10px;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .tombol-action {
@@ -211,6 +212,7 @@ div#user {
   text-decoration: none;
   margin-right: 3px;
   font-size: 9px;
+  /* display: block; */
 }
 
 .tombol-action:hover {
@@ -460,4 +462,12 @@ ul.pagination li a:hover {
 ul.pagination li a.active {
   background-color: #1e5475;
   color: white;
+}
+
+#frame-tambah #left {
+  float: left;
+}
+
+#frame-tambah #right {
+  float: right;
 }
