@@ -10,7 +10,7 @@
     $data_per_halaman = 5;
     $mulai_dari = ($pagination-1) * $data_per_halaman;
 
-    $query = mysqli_query($koneksi, "SELECT * FROM barang LIMIT $mulai_dari, $data_per_halaman");
+    $query = mysqli_query($koneksi, "SELECT barang.*, kategori FROM barang JOIN kategori ON barang.kategori_id=kategori.kategori_id LIMIT $mulai_dari, $data_per_halaman");
         
     if(mysqli_num_rows($query) == 0){
         echo "<h3>Saat ini belum ada kategori di dalam table barang</h3>";
@@ -45,9 +45,8 @@
 
     echo "</table>";
 
-    $queryHitungBarang = "SELECT * FROM barang";
+    $queryHitungBarang = mysqli_query($koneksi, "SELECT * FROM barang");
     pagination($queryHitungBarang, $data_per_halaman, $pagination, "index.php?page=my_profile&module=barang&action=list", "barang");
-
     
 }
 

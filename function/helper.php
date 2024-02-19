@@ -45,24 +45,37 @@
         }
     }
 
-    function pagination($query, $data_per_halaman, $pagination, $url, $module){
+    function pagination($query_or_result, $data_per_halaman, $pagination, $url, $module) {
         global $koneksi;
-        
-        $queryHitungKategori = mysqli_query($koneksi, $query);
-        $total_data =mysqli_num_rows($queryHitungKategori);
-        $total_halaman = Ceil($total_data / $data_per_halaman);
+    
+        // Jika yang diberikan adalah query SQL, eksekusi query dan ambil hasilnya
+        if (is_string($query_or_result)) {
+            $result = mysqli_query($koneksi, $query_or_result);
+            if (!$result) {
+                die("Query error: " . mysqli_error($koneksi));
+            }
+        } 
+        // Jika yang diberikan adalah objek mysqli_result, gunakan langsung
+        else {
+            $result = $query_or_result;
+        }
+    
+        $total_data = mysqli_num_rows($result);
+        $total_halaman = ceil($total_data / $data_per_halaman);
     
         echo "<ul class='pagination'>";
-        for($i = 1; $i<=$total_halaman; $i ++) {
-            if($pagination == $i){
-                echo "<li><a class='active' href='".BASE_URL."index.php?page=my_profile&module=kategori&action=list&pagination=$i'>$i</a></li>";
-            }else {
-                echo "<li><a href='".BASE_URL."index.php?page=my_profile&module=kategori&action=list&pagination=$i'>$i</a></li>";
+        for ($i = 1; $i <= $total_halaman; $i++) {
+            if ($pagination == $i) {
+                echo "<li><a class='active' href='" . BASE_URL . "$url&pagination=$i'>$i</a></li>";
+            } else {
+                echo "<li><a href='" . BASE_URL . "$url&pagination=$i'>$i</a></li>";
             }
         }
         echo "</ul>";
-       
     }
+    
+    
+    
 
 
    
